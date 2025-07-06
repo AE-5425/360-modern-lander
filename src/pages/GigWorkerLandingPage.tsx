@@ -89,11 +89,11 @@ const GigWorkerCarrierCarousel: React.FC = () => {
     <Box
       sx={{
         position: 'absolute',
-        bottom: '-120px',
+        bottom: { xs: '-80px', md: '-120px' },
         left: 0,
         right: 0,
         zIndex: 15,
-        height: '240px',
+        height: { xs: '160px', md: '240px' },
         display: 'flex',
         alignItems: 'center',
         overflow: 'hidden',
@@ -109,12 +109,12 @@ const GigWorkerCarrierCarousel: React.FC = () => {
             elevation={0}
             sx={{ 
               textAlign: 'center', 
-              mb: 5,
+              mb: { xs: 3, md: 5 },
               background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.15))',
               border: '1px solid rgba(255, 255, 255, 0.3)',
               borderRadius: '20px',
-              py: 2,
-              px: 4,
+              py: { xs: 1.5, md: 2 },
+              px: { xs: 3, md: 4 },
               mx: 'auto',
               width: 'fit-content',
               boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
@@ -125,7 +125,7 @@ const GigWorkerCarrierCarousel: React.FC = () => {
               sx={{ 
                 fontWeight: 700,
                 color: 'rgba(255, 255, 255, 0.95)',
-                fontSize: '1.1rem',
+                fontSize: { xs: '0.9rem', md: '1.1rem' },
                 textShadow: '0 2px 8px rgba(0,0,0,0.3)'
               }}
             >
@@ -159,16 +159,16 @@ const GigWorkerCarrierCarousel: React.FC = () => {
           }}
         >
           <motion.div
-            animate={{ x: [0, -100 * carriers.length] }}
+            animate={{ x: [0, -80 * carriers.length] }}
             transition={{
               x: { repeat: Infinity, repeatType: "loop", duration: 25, ease: "linear" },
             }}
             style={{
               display: 'flex',
-              gap: '100px',
+              gap: '80px',
               alignItems: 'center',
               width: 'fit-content',
-              padding: '20px 0',
+              padding: '15px 0',
             }}
           >
             {[...carriers, ...carriers, ...carriers].map((carrier, index) => (
@@ -179,14 +179,14 @@ const GigWorkerCarrierCarousel: React.FC = () => {
               >
                 <Box
                   sx={{
-                    minWidth: '160px',
-                    height: '80px',
+                    minWidth: { xs: '120px', md: '160px' },
+                    height: { xs: '60px', md: '80px' },
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     background: 'rgba(255, 255, 255, 0.95)',
                     borderRadius: '12px',
-                    padding: '12px',
+                    padding: { xs: '8px', md: '12px' },
                     boxShadow: '0 8px 30px rgba(0,0,0,0.15)',
                     border: '1px solid rgba(255,255,255,0.4)',
                   }}
@@ -196,8 +196,8 @@ const GigWorkerCarrierCarousel: React.FC = () => {
                     src={carrier.logo}
                     alt={`${carrier.name} logo`}
                     sx={{
-                      maxHeight: '50px',
-                      maxWidth: '140px',
+                      maxHeight: { xs: '35px', md: '50px' },
+                      maxWidth: { xs: '100px', md: '140px' },
                       objectFit: 'contain',
                       filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.1))',
                     }}
@@ -557,7 +557,7 @@ const GigWorkerFeaturesSection: React.FC = () => {
     <Box 
       id="features"
       sx={{ 
-        py: { xs: 20, md: 25 }, 
+        py: { xs: 15, md: 25 }, 
         background: `
           linear-gradient(180deg, 
             #fafafa 0%, 

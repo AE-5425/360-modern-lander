@@ -1613,6 +1613,7 @@ export const GigWorkerLeadForm: React.FC = () => {
                                   placeholder="ZIP Code"
                                   maxLength={5}
                                   darkMode={darkMode}
+                                  autocomplete="postal-code"
                                 />
                               )}
                             />

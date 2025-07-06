@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { 
@@ -16,7 +16,7 @@ import {
   ExternalLink
 } from 'lucide-react';
 
-const Footer: React.FC = () => {
+const Footer: React.FC<{ isFormPage?: boolean }> = ({ isFormPage = false }) => {
   const currentYear = new Date().getFullYear();
 
   const companyInfo = {
@@ -70,7 +70,17 @@ const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer 
+      className="bg-gray-900 text-white"
+      style={isFormPage ? {
+        position: 'relative',
+        left: typeof window !== 'undefined' && window.innerWidth >= 1024 ? 'calc(-50vw + 50%)' : '0',
+        width: typeof window !== 'undefined' && window.innerWidth >= 1024 ? '100vw' : '100%',
+        marginLeft: typeof window !== 'undefined' && window.innerWidth >= 1024 ? '50vw' : '0',
+        transform: typeof window !== 'undefined' && window.innerWidth >= 1024 ? 'translateX(-50%)' : 'none',
+        zIndex: 1000
+      } : {}}
+    >
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-12">
