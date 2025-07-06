@@ -1,0 +1,123 @@
+📦public
+ ┣ 📂images
+ ┃ ┣ 📜barber_shop.jpg
+ ┃ ┣ 📜dad_daughter.jpg
+ ┃ ┣ 📜doctor_smiling_checking_patient.jpg
+ ┃ ┣ 📜doctor_smiling_showing_results.jpg
+ ┃ ┣ 📜doctor_smiling_showing_results_2.jpg
+ ┃ ┣ 📜friends_smiling.jpg
+ ┃ ┣ 📜friends_smiling_park_with_dog.jpg
+ ┃ ┣ 📜hero-couple.jpg
+ ┃ ┣ 📜hero-family-diverse.jpg
+ ┃ ┣ 📜hero-family.jpg
+ ┃ ┣ 📜hero-single-adult.jpg
+ ┃ ┣ 📜hero-single-parent.jpg
+ ┃ ┣ 📜two_women_laughing_in_grass.jpg
+ ┃ ┣ 📜women_laughing.jpg
+ ┃ ┣ 📜women_laughing_outdoor_brunch.jpg
+ ┃ ┣ 📜young_man_coffee.jpg
+ ┃ ┣ 📜young_man_phone.jpg
+ ┃ ┣ 📜young_woman_and_dog.jpg
+ ┃ ┣ 📜young_woman_on_laptop.jpg
+ ┃ ┣ 📜young_woman_on_laptop_and_phone.jpg
+ ┃ ┣ 📜young_woman_on_phone.jpg
+ ┃ ┗ 📜young_woman_pool.jpg
+ ┣ 📂logos
+ ┃ ┣ 📜360InsuranceGroup.png
+ ┃ ┣ 📜Ambetter_Logo.webp
+ ┃ ┣ 📜Anthem_Logo.webp
+ ┃ ┣ 📜Ascension_Logo.webp
+ ┃ ┣ 📜blue_cross_blue_shield_Logo.webp
+ ┃ ┣ 📜Christus_Health_Logo.webp
+ ┃ ┣ 📜cigna_Logo.webp
+ ┃ ┣ 📜Molina_Healthcare_logo.webp
+ ┃ ┣ 📜Oscar_Health_logo.webp
+ ┃ ┗ 📜UnitedHealthcare_Logo.webp
+ ┗ 📜vite.svg
+ 📦src
+ ┣ 📂assets
+ ┃ ┗ 📜react.svg
+ ┣ 📂components
+ ┃ ┣ 📂auth
+ ┃ ┃ ┣ 📜LoginForm.tsx
+ ┃ ┃ ┣ 📜PasswordResetForm.tsx
+ ┃ ┃ ┣ 📜ProtectedRoute.tsx
+ ┃ ┃ ┣ 📜RegisterForm.tsx
+ ┃ ┃ ┗ 📜UserProfile.tsx
+ ┃ ┣ 📂cards
+ ┃ ┃ ┣ 📜GraphicsCard.tsx
+ ┃ ┃ ┣ 📜IconCard.tsx
+ ┃ ┃ ┗ 📜index.ts
+ ┃ ┣ 📂enrollment
+ ┃ ┃ ┣ 📜EnrollmentFlow.tsx
+ ┃ ┃ ┗ 📜GigWorkerLeadForm.tsx
+ ┃ ┣ 📂shared
+ ┃ ┃ ┣ 📜DocuSignSignature.tsx
+ ┃ ┃ ┣ 📜EnhancedCheckbox.tsx
+ ┃ ┃ ┣ 📜EnhancedInput.tsx
+ ┃ ┃ ┣ 📜MobileProgressStepper.tsx
+ ┃ ┃ ┣ 📜ModernDatePicker.tsx
+ ┃ ┃ ┣ 📜PlanSelectionCard.tsx
+ ┃ ┃ ┣ 📜ThemeSelector.tsx
+ ┃ ┃ ┣ 📜TobaccoSelector.tsx
+ ┃ ┃ ┣ 📜ToggleButton.tsx
+ ┃ ┃ ┣ 📜TrustFooter.tsx
+ ┃ ┃ ┗ 📜WorkTypeSelector.tsx
+ ┃ ┣ 📂steps
+ ┃ ┃ ┣ 📜AddressStep.tsx
+ ┃ ┃ ┣ 📜ContactInfoStep.tsx
+ ┃ ┃ ┣ 📜HouseholdStep.tsx
+ ┃ ┃ ┣ 📜IncomeStep.tsx
+ ┃ ┃ ┣ 📜PersonalDetailsStep.tsx
+ ┃ ┃ ┣ 📜PlanSelectionStep.tsx
+ ┃ ┃ ┣ 📜ReviewAndSignStep.tsx
+ ┃ ┃ ┗ 📜SEPScreeningStep.tsx
+ ┃ ┣ 📂utils
+ ┃ ┃ ┣ 📜addressValidation.ts
+ ┃ ┃ ┣ 📜constant.ts
+ ┃ ┃ ┣ 📜formatters.ts
+ ┃ ┃ ┣ 📜fplCalculations.ts
+ ┃ ┃ ┗ 📜validators.ts
+ ┃ ┣ 📜ButtonAnimationWrapper.tsx
+ ┃ ┣ 📜ContainerWrapper.tsx
+ ┃ ┣ 📜Footer.tsx
+ ┃ ┣ 📜GorgeousHero.tsx
+ ┃ ┣ 📜GraphicsImage.tsx
+ ┃ ┣ 📜Header - Copy.tsx
+ ┃ ┣ 📜Header.tsx
+ ┃ ┣ 📜layout.tsx
+ ┃ ┣ 📜SvgIcon.tsx
+ ┃ ┗ 📜ThemeProvider.tsx
+ ┣ 📂contexts
+ ┃ ┗ 📜AuthContext.tsx
+ ┣ 📂hooks
+ ┣ 📂pages
+ ┃ ┣ 📜AboutPage.tsx
+ ┃ ┣ 📜BrowsePlansPage.tsx
+ ┃ ┣ 📜DashboardPage.tsx
+ ┃ ┣ 📜EligibilityPage.tsx
+ ┃ ┣ 📜EnrollmentPage.tsx
+ ┃ ┣ 📜GigWorkerLandingPage.tsx
+ ┃ ┣ 📜GigWorkerQuotePage.tsx
+ ┃ ┣ 📜HomePage - Copy (2).tsx
+ ┃ ┣ 📜HomePage.tsx
+ ┃ ┣ 📜NotFoundPage.tsx
+ ┃ ┗ 📜PlanDetailsPage.tsx
+ ┣ 📂theme
+ ┃ ┣ 📜config.ts
+ ┃ ┣ 📜index.ts
+ ┃ ┣ 📜overrides.ts
+ ┃ ┣ 📜palette.ts
+ ┃ ┣ 📜theme.ts
+ ┃ ┗ 📜typography.ts
+ ┣ 📂types
+ ┣ 📂utils
+ ┃ ┣ 📜CommonFocusStyle.ts
+ ┃ ┣ 📜constant.ts
+ ┃ ┗ 📜quoteEngine.ts
+ ┣ 📜App.css
+ ┣ 📜App.tsx
+ ┣ 📜index.css
+ ┣ 📜main.tsx
+ ┣ 📜README.md
+ ┗ 📜vite-env.d.ts
