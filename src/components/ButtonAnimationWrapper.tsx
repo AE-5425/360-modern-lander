@@ -31,7 +31,7 @@ const ButtonAnimationWrapper: React.FC<ButtonAnimationWrapperProps> = ({
           whileHover: { 
             scale: 1.02,
             y: -2,
-            transition: { duration: 0.2, ease: "easeOut" }
+            transition: { duration: 0.2 }
           },
           whileTap: { 
             scale: 0.98,
@@ -43,7 +43,7 @@ const ButtonAnimationWrapper: React.FC<ButtonAnimationWrapperProps> = ({
         return {
           whileHover: { 
             scale: 1.05,
-            transition: { duration: 0.3, ease: "easeOut" }
+            transition: { duration: 0.3 }
           },
           whileTap: { 
             scale: 0.95,
@@ -54,7 +54,7 @@ const ButtonAnimationWrapper: React.FC<ButtonAnimationWrapperProps> = ({
         return {
           whileHover: { 
             scale: 1.01,
-            transition: { duration: 0.4, ease: "easeOut" }
+            transition: { duration: 0.4 }
           },
           whileTap: { 
             scale: 0.99,
@@ -65,7 +65,7 @@ const ButtonAnimationWrapper: React.FC<ButtonAnimationWrapperProps> = ({
         return {
           whileHover: { 
             scale: 1.05,
-            transition: { duration: 0.2, ease: "easeOut" }
+            transition: { duration: 0.2 }
           },
           whileTap: { 
             scale: 0.95,

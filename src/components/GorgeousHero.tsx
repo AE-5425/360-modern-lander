@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Box, Container, Typography, Button, Grid, Card, CardContent,
+  Box, Container, Typography, Button, Grid, Card,
   Chip, Avatar, useTheme, alpha, useMediaQuery
 } from '@mui/material';
 import { Link } from 'react-router-dom';
 import {
-  Star, Shield, Zap, Heart, Users, DollarSign, Clock, 
-  CheckCircle, TrendingUp, ArrowRight, Award, 
-  Calendar, Lock, Target, Sparkles, Eye, Phone
+  Star, Shield, Zap, DollarSign, 
+  CheckCircle, ArrowRight, Award, 
+  Calendar, Lock, Phone
 } from 'lucide-react';
 
 const MagicalHealthcareHero: React.FC = () => {
@@ -171,7 +171,7 @@ const MagicalHealthcareHero: React.FC = () => {
       <Container maxWidth="xl" sx={{ position: 'relative', zIndex: 2 }}>
         <Grid container spacing={6} alignItems="center">
           {/* Left Content - Enhanced with healthcare conversion psychology */}
-          <Grid item xs={12} lg={6}>
+          <Grid size={{ xs: 12, lg: 6 }}>
             <Box sx={{ textAlign: { xs: 'center', lg: 'left' } }}>
               {/* Urgent Trust Badge with Timer */}
               <motion.div
@@ -320,7 +320,7 @@ const MagicalHealthcareHero: React.FC = () => {
               >
                 <Grid container spacing={2} sx={{ mb: 6 }}>
                   {trustFeatures.map((feature, index) => (
-                    <Grid item xs={6} sm={3} key={index}>
+                    <Grid size={{ xs: 6, sm: 3 }} key={index}>
                       <motion.div
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -557,7 +557,7 @@ const MagicalHealthcareHero: React.FC = () => {
           </Grid>
 
           {/* Right Content - Enhanced Visual Elements */}
-          <Grid item xs={12} lg={6}>
+          <Grid size={{ xs: 12, lg: 6 }}>
             <Box sx={{ 
               position: 'relative',
               display: 'flex', 
@@ -878,7 +878,8 @@ const MagicalHealthcareHero: React.FC = () => {
       </Container>
 
       {/* Enhanced keyframes */}
-      <style jsx>{`
+      <style>
+        {`
         @keyframes backgroundFlow {
           0% { transform: translateX(0) translateY(0); }
           25% { transform: translateX(-10px) translateY(-5px); }
@@ -886,7 +887,8 @@ const MagicalHealthcareHero: React.FC = () => {
           75% { transform: translateX(-15px) translateY(-2px); }
           100% { transform: translateX(0) translateY(0); }
         }
-      `}</style>
+        `}
+      </style>
     </Box>
   );
 };
