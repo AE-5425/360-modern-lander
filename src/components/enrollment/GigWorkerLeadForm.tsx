@@ -1122,13 +1122,14 @@ export const GigWorkerLeadForm: React.FC = () => {
         />
       </div>
 
-      {/* STICKY Hero Section - Left Side */}
+      {/* FIXED Hero Section - Left Side */}
       <div 
         className="hidden lg:block"
         style={{
-          position: 'sticky',
+          position: 'fixed',
           top: 0,
-          width: '33.333333%', // Exact 1/3 width
+          left: 0,
+          width: '33.333333%', // 33/66 split
           height: '100vh',
           zIndex: 1,
           overflow: 'hidden'
@@ -1144,7 +1145,7 @@ export const GigWorkerLeadForm: React.FC = () => {
             height: '100%',
             backgroundImage: 'url(/images/young_woman_on_laptop.jpg)',
             backgroundSize: 'cover',
-            backgroundPosition: '20% center', // Moved image further left to show more of the woman
+            backgroundPosition: '55% center', // Moved image further left to show more of the woman
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'scroll', // Changed from 'fixed' to allow positioning
             willChange: 'auto' // Prevent transform optimizations
@@ -1184,7 +1185,7 @@ export const GigWorkerLeadForm: React.FC = () => {
             </div>
           </div>
 
-          <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-3 py-1.5 mb-4 border border-white/30">
+          <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-3 py-1.5 mb-4 border border-white/30 max-w-sm">
             <Zap className="w-4 h-4 text-yellow-300 mr-2" />
             <span className="font-semibold text-sm">90-second application</span>
           </div>
@@ -1234,7 +1235,7 @@ export const GigWorkerLeadForm: React.FC = () => {
       <div 
         className="w-full flex items-center justify-center p-3 md:p-6 lg:p-8 relative z-10"
         style={{
-          // Account for fixed left pane on large screens
+          // Account for fixed left pane on large screens - 33/66 split
           marginLeft: typeof window !== 'undefined' && window.innerWidth >= 1024 ? '33.333333%' : '0',
           width: typeof window !== 'undefined' && window.innerWidth >= 1024 ? '66.666667%' : '100%',
           minHeight: '100vh',
