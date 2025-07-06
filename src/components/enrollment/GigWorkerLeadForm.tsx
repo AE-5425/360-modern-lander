@@ -1122,17 +1122,15 @@ export const GigWorkerLeadForm: React.FC = () => {
         />
       </div>
 
-      {/* FIXED Hero Section - Left Side */}
+      {/* STICKY Hero Section - Left Side */}
       <div 
         className="hidden lg:block"
         style={{
-          position: 'fixed',
+          position: 'sticky',
           top: 0,
-          left: 0,
           width: '33.333333%', // Exact 1/3 width
           height: '100vh',
           zIndex: 1,
-          contain: 'layout style paint', // CSS containment prevents interference
           overflow: 'hidden'
         }}
       >
@@ -1186,7 +1184,7 @@ export const GigWorkerLeadForm: React.FC = () => {
             </div>
           </div>
 
-          <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-8 border border-white/30">
+          <div className="inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-3 py-1.5 mb-4 border border-white/30">
             <Zap className="w-4 h-4 text-yellow-300 mr-2" />
             <span className="font-semibold text-sm">90-second application</span>
           </div>
@@ -1433,6 +1431,7 @@ export const GigWorkerLeadForm: React.FC = () => {
                                     error={errors.firstName}
                                     placeholder="First Name"
                                     darkMode={darkMode}
+                                    autocomplete="given-name"
                                   />
                                 </motion.div>
                               )}
@@ -1459,6 +1458,7 @@ export const GigWorkerLeadForm: React.FC = () => {
                                     error={errors.lastName}
                                     placeholder="Last Name"
                                     darkMode={darkMode}
+                                    autocomplete="family-name"
                                   />
                                 </motion.div>
                               )}
@@ -1485,13 +1485,14 @@ export const GigWorkerLeadForm: React.FC = () => {
                                 whileFocus={{ scale: 1.02 }}
                                 transition={{ type: "spring", stiffness: 300 }}
                               >
-                                <EnhancedInput
-                                  field={{ ...field, id: 'email' }}
-                                  error={errors.email}
-                                  placeholder="Email Address"
-                                  type="email"
-                                  darkMode={darkMode}
-                                />
+                                  <EnhancedInput
+                                    field={{ ...field, id: 'email' }}
+                                    error={errors.email}
+                                    placeholder="Email Address"
+                                    type="email"
+                                    darkMode={darkMode}
+                                    autocomplete="email"
+                                  />
                               </motion.div>
                             )}
                           />
@@ -1524,6 +1525,7 @@ export const GigWorkerLeadForm: React.FC = () => {
                                   formatter={formatPhoneNumber}
                                   maxLength={14}
                                   darkMode={darkMode}
+                                  autocomplete="tel"
                                 />
                               </motion.div>
                             )}

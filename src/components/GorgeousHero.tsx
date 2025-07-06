@@ -805,11 +805,12 @@ const MagicalHealthcareHero: React.FC = () => {
                   sx={{ 
                     textAlign: 'center', 
                     mb: 3, 
+                    mt: { xs: 6, sm: 4, md: 3 }, // Add responsive top margin for mobile
                     fontWeight: 600,
                     color: isDark ? 'grey.400' : 'text.secondary'
                   }}
                 >
-                  Compare plans from top carriers:
+                  Compatible with major networks nationwide
                 </Typography>
                 
                 <Box sx={{ 

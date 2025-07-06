@@ -15,7 +15,8 @@ interface EnhancedInputProps {
   type?: 'text' | 'email' | 'tel' | 'password';
   formatter?: (value: string) => string;
   maxLength?: number;
-  darkMode?: boolean; // Added darkMode prop
+  darkMode?: boolean;
+  autocomplete?: string; // Added autocomplete prop
 }
 
 export const EnhancedInput: React.FC<EnhancedInputProps> = ({
@@ -25,7 +26,8 @@ export const EnhancedInput: React.FC<EnhancedInputProps> = ({
   type = 'text',
   formatter,
   maxLength,
-  darkMode = false
+  darkMode = false,
+  autocomplete
 }) => {
   const [showPassword, setShowPassword] = useState(false);
   const [isFocused, setIsFocused] = useState(false);
@@ -71,6 +73,7 @@ export const EnhancedInput: React.FC<EnhancedInputProps> = ({
             field.onBlur();
           }}
           maxLength={maxLength}
+          autoComplete={autocomplete}
           className={`w-full px-4 py-2 md:px-6 md:py-3 rounded-xl border-2 transition-all duration-300 text-base md:text-lg font-medium placeholder-opacity-70 backdrop-blur-sm ${
             hasError
               ? (darkMode 
